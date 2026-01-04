@@ -73,7 +73,6 @@ p {
   font-weight: bold;
   transition: all 0.3s ease;
 }
-
 .btn:hover {
   transform: scale(1.05);
   background: #ffd633;
@@ -83,6 +82,29 @@ p {
   margin-top: 60px;
   font-size: 13px;
   color: #aaa;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://i.imgur.com/8QfZQZy.png");
+  opacity: 0.12;
+  pointer-events: none;
 }
 </style>
 </head>
