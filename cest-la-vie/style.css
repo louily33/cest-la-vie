@@ -24,11 +24,10 @@ body {
 
 .hero {
     padding: 120px 20px;
-    background:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
-        url("https://cdn.pixabay.com/photo/2017/08/07/19/07/perfume-2602784_1280.jpg")
-        center / cover no-repeat;
-}
+   background:
+linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.88)),
+url("https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1600&q=80");
+
 .hero h2 {
     font-size: 2rem;
     color: gold;
@@ -77,5 +76,6 @@ footer {
     font-size: 0.9rem;
     color: #aaa;
 }
+
 
 
