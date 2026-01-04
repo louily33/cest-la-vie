@@ -6,90 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    <h1 style="color:red; font-size:40px">
-SITE ATUALIZADO AGORA
-</h1>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
 
     body {
-      margin: 0;
       height: 100vh;
-      background: linear-gradient(160deg, #000 0%, #111 50%, #000 100%);
+      background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url("https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Arial', sans-serif;
       color: #fff;
     }
 
     .container {
-  backdrop-filter: blur(2px);
-}
-
+      text-align: center;
+      padding: 30px;
+      max-width: 800px;
+    }
 
     h1 {
       font-size: 52px;
-      color: #f5c400;
-      margin-bottom: 5px;
+      color: #d4af37;
+      margin-bottom: 10px;
     }
 
     .sub {
       letter-spacing: 4px;
-      font-size: 12px;
-      color: #aaa;
+      font-size: 13px;
+      color: #ccc;
       margin-bottom: 35px;
     }
 
     h2 {
-      color: #f5c400;
-      font-size: 26px;
-      margin-bottom: 15px;
+      font-size: 30px;
+      color: #f5d27a;
+      margin-bottom: 20px;
     }
 
     p {
-      color: #ddd;
-      font-size: 16px;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #eee;
       margin-bottom: 40px;
     }
 
     .buttons {
       display: flex;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
-    a {
-      background: #f5c400;
+    .btn {
+      background: #d4af37;
       color: #000;
-      padding: 14px 32px;
+      padding: 15px 35px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
     }
 
-    a:hover {
-      transform: scale(1.08);
-      background: #ffd633;
+    .btn:hover {
+      background: #b8962e;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaa;
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="container">
     <h1>C’est La Vie</h1>
     <div class="sub">PERFUMES ÁRABES</div>
 
     <h2>Luxo e tradição da perfumaria árabe</h2>
-    <p>Perfumes intensos, sofisticados e inesquecíveis</p>
+
+    <p>
+      Trabalhamos exclusivamente com perfumes árabes intensos,
+      marcantes e de alto padrão, como Asad, Fakhar, Khamrah e muito mais.
+    </p>
 
     <div class="buttons">
-      <a href="#">WhatsApp</a>
-      <a href="#">Instagram</a>
+      <a class="btn" href="#">WhatsApp</a>
+      <a class="btn" href="#">Instagram</a>
     </div>
-  </div>
 
+    <footer>
+      © C’est La Vie – Perfumes Árabes
+    </footer>
+  </div>
 </body>
 </html>
-
-
